@@ -1,0 +1,60 @@
+{
+    "name": "mcarral/php-sifen",
+    "description": "PHP SIFEN package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matias Carral",
+            "email": "matiascarral@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/mcarral/nusoap.git"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-openssl": "*",
+        "ext-soap": "*",
+        "ext-zip": "*",
+        "ext-simplexml": "*",
+        "robrichards/xmlseclibs": "^3.1",
+        "simplesoftwareio/simple-qrcode": "^4.2",
+        "h4cc/wkhtmltopdf-amd64": "0.12.x",
+        "h4cc/wkhtmltoimage-amd64": "0.12.x",
+        "laminas/laminas-soap": "^2.10"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mcarral\\Sifen\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mcarral\\Sifen\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
