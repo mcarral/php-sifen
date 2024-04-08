@@ -25,7 +25,8 @@
         "simplesoftwareio/simple-qrcode": "^4.2",
         "h4cc/wkhtmltopdf-amd64": "0.12.x",
         "h4cc/wkhtmltoimage-amd64": "0.12.x",
-        "laminas/laminas-soap": "^2.13"
+        "laminas/laminas-soap": "^2.13",
+        "illuminate/support": "^11.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.5",
